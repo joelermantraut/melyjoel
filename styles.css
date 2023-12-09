@@ -1,0 +1,75 @@
+html, body, .container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.25em;
+
+    padding: 0.5em;
+
+    background: teal;
+}
+
+.phrase {
+    text-align: center;
+    font-size: 1.75em;
+
+    padding: 0.5em;
+
+    background: yellow;
+}
+.phrase span {
+    color: rgb(255, 9, 173);
+    font-weight: bold;
+}
+
+.first-conversation .img-text {
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+.first-conversation .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.first-conversation .img-wrapper img {
+    width: 30%;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.sections {
+    padding: 1em;
+}
+
+.sections > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0.5em;
+    margin: 1em;
+
+    font-size: 1.25em;
+}
+.sections > div img {
+    width: 30%;
+}
+
+.footer {
+    padding: 1em;
+    
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: bold;
+
+    background: teal;
+}
