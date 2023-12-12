@@ -7,8 +7,9 @@
     <meta name="author" content="author" />
     <meta name="keywords" content="keywords" />
     <link rel="stylesheet" href="https://unpkg.com/reset-css@5.0.1/reset.css" />
-    <link rel="stylesheet" href="./styles.css" type="text/css"/>
-    <link rel="stylesheet" href="./media-queries.css" type="text/css"/>
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css"/>
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.min.css" />
   </head>
   <body>
     <div class="container">
@@ -20,20 +21,14 @@
             </div>
         
             <div class="title">
-                <p>Mel y Joel</p>
+                <h1>Mel y Joel</h1>
             </div>
-    
+
             <div class="first-conversation">
-                <div class="img-text">
-                    <p>Así empezó todo...</p>
+                <div class="subtitle">
+                    <h2>Como empezo todo...</h2>
                 </div>
-                <div class="img-wrapper">
-                    <img src="images/wp_fc_1.jpeg" alt="WhatsApp1">
-                    <img src="images/wp_fc_2.jpeg" alt="WhatsApp2">
-                    <img src="images/wp_fc_3.jpeg" alt="WhatsApp3">
-                    <img src="images/wp_fc_4.jpeg" alt="WhatsApp4">
-                    <img src="images/wp_fc_5.jpeg" alt="WhatsApp5">
-                </div>
+                <div id="inline-gallery-container" class="inline-gallery-container"></div>
             </div>
     
             <div class="phrase phrase-1">
@@ -41,69 +36,36 @@
                 lo que la hizo tan importante.</p>
             </div>
     
-            <div class="dates">
-                <div class="sections">
-                    <div class="section-1">
-                        <div class="date">
-                            <h1>Cuando nos conocimos</h1>
-                            <p>9/04/2022</p>
-                        </div>
-                    </div>
-                    <div class="section-2">
-                        <div class="date">
-                            <h1>Nuestra primera conversación</h1>
-                            <p>1/07/2022</p>
-                        </div>
-                    </div>
-                    <div class="section-3">
-                        <div class="date">
-                            <h1>El día que todo empezó a cambiar</h1>
-                            <p>6/08/2023</p>
-                        </div>
-                        <img src="images/el-dia-que-cambio-todo.jpeg" alt="Todo cambio">
-                    </div>
-                    <div class="section-4">
-                        <div class="date">
-                            <h1>Nuestro primer beso</h1>
-                            <p>14/11/2023</p>
-                        </div>
-                    </div>
-                    <div class="section-5">
-                        <div class="date">
-                            <h1>Nuestro primer "Te amo"</h1>
-                            <p>16/11/2023</p>
-                        </div>
-                    </div>
-                    <div class="section-6">
-                        <div class="date">
-                            <h1>Primera formalización</h1>
-                            <p>24/11/2023</p>
-                        </div>
-                    </div>
-                    <div class="section-7">
-                        <div class="date">
-                            <h1>Primera cena con la familia</h1>
-                            <p>2/12/2023</p>
-                        </div>
-                        <img src="images/primera-cena-familiar.jpeg" alt="Primera cena familiar">
-                    </div>
-                    <div class="section-8">
-                        <div class="date">
-                            <h1>Primera cena con familiares</h1>
-                            <p>3/12/2023</p>
-                        </div>
-                        <img src="images/primera-cena-con-familiares.jpeg" alt="Primera cena con familiares">
-                    </div>
-                    <div class="section-9 update">
-                        <h1>La verdadera formalización</h1>
-                        <div class="date"><p>0:0:0</p></div>
-                    </div>
-                </div>
+            <div id="lightgallery">
+                <a href="images/photos/primera_vez_que_nos_vimos.png">
+                    <img src="images/photos/primera_vez_que_nos_vimos.png" alt="Primera vez que nos vimos (9/04/2022)">
+                </a>
+                <a href="images/photos/el-dia-que-cambio-todo.jpeg">
+                    <img src="images/photos/el-dia-que-cambio-todo.jpeg" alt="El día que todo cambió (6/08/2023)">
+                </a>
+                <a href="images/photos/nuestra_primera_foto.png">
+                    <img src="images/photos/nuestra_primera_foto.png" alt="Nuestra primera foto (19/09/2023)">
+                </a>
+                <a href="images/photos/photo-n.jpeg">
+                    <img src="images/photos/photo-n.jpeg" alt="Nuestro primer beso (14/11/2023)">
+                </a>
+                <a href="images/photos/photo-n1.jpeg">
+                    <img src="images/photos/photo-n1.jpeg" alt="Nuestro primer 'Te amo' (20/11/2023)">
+                </a>
+                <a href="images/photos/mas_que_sentimientos.jpeg">
+                    <img src="images/photos/mas_que_sentimientos.jpeg" alt="Más que sentimientos">
+                </a>
+                <a href="images/photos/primera-cena-familiar.jpeg">
+                    <img src="images/photos/primera-cena-familiar.jpeg" alt="Primera cena familiar">
+                </a>
+                <a href="images/photos/primera-cena-con-familiares.jpeg">
+                    <img src="images/photos/primera-cena-con-familiares.jpeg" alt="Primera cena con familiares">
+                </a>
             </div>
 
             <div class="phrase phrase-2">
-                <p>"Tenía el <span>arcoiris</span> más hermoso en sus ojos, porque al mirarme pintaba
-                    de <span>colores</span> mi vida."
+                <p>"Tenía el arcoiris más hermoso en sus ojos, porque al mirarme pintaba
+                    de colores mi vida."
                 </p>
             </div>
     
@@ -118,6 +80,7 @@
         </div>
 
     </div>
-    <script type="text/javascript" url="script.js"></script>
+    <script type="text/javascript" src="js/lightgallery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
