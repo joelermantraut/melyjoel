@@ -13,13 +13,13 @@ img {
 }
 
 .container {
-    background-image: url("images/fondo-espacio.jpg");
+    background-image: url("../images/fondo-espacio.jpg");
     background-repeat: repeat;
 
     overflow: hidden;
 }
 .container-shadow {
-    background-color: rgba(0, 0, 120, 0.61);
+    /* background-color: rgba(0, 0, 120, 0.61); */
 }
 
 .title {
