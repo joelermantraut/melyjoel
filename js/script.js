@@ -5,7 +5,36 @@
 // if (window.addEventListener) window.addEventListener('load', autorun, false)
 // else window.onload = autorun
 
-lightGallery(document.getElementById('lightgallery'), {});
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/*                          SCROLL FUNCTIONS                        */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+toTopDiv = document.getElementsByClassName("to-top")[0];
+
+window.onscroll = function(e) {
+    if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
+        toTopDiv.className = "to-top show";
+    } else {
+        toTopDiv.className = "to-top hide";
+    }
+}
+
+toTopDiv.addEventListener("click", function(e) {
+    window.scrollTo({top: 0, left: 0, behaviour: "smooth"});
+    toTopDiv.style.display = "none";
+});
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/*                          LIGHT GALLERY CONFIG                    */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+lightGallery(document.getElementById('lightgallery'), {
+    closable: true,
+});
 
 const lgContainer = document.getElementById('inline-gallery-container');
 const inlineGallery = lightGallery(lgContainer, {
@@ -51,3 +80,9 @@ const inlineGallery = lightGallery(lgContainer, {
 
 // Since we are using dynamic mode, we need to programmatically open lightGallery
 inlineGallery.openGallery();
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/*                              END OF DOC                          */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
