@@ -7,6 +7,19 @@
 
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
+/*                          CLICK FUNCTIONS                         */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+pinkButton = document.getElementsByClassName("pink-button")[0];
+firstPhrase = document.getElementsByClassName("phrase-1")[0];
+
+pinkButton.onclick = function(event) {
+    firstPhrase.className = "phrase phrase-1 pink";
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
 /*                          SCROLL FUNCTIONS                        */
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
@@ -23,7 +36,7 @@ window.onscroll = function(e) {
 
 toTopDiv.addEventListener("click", function(e) {
     window.scrollTo({top: 0, left: 0, behaviour: "smooth"});
-    toTopDiv.style.display = "none";
+    toTopDiv.className = "to-top hide";
 });
 
 /* ---------------------------------------------------------------- */
@@ -32,7 +45,8 @@ toTopDiv.addEventListener("click", function(e) {
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 
-lightGallery(document.getElementById('lightgallery'), {
+lightgallery = document.getElementById('lightgallery');
+lightGallery(lightgallery, {
     closable: true,
 });
 
