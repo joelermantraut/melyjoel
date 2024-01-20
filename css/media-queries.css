@@ -1,19 +1,38 @@
 @media screen and (min-width: 1200px) {
     body {
-        width: 90vh;
-        font-size: 1em;
+        font-size: 16px;
+    }
+    .container-shadow {
+        width: 90vw;
+    }
+    #lightgallery {
+        column-count: 3;
+        /* Esta linea hace la magia */
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     body {
-        width: 100vh;
-        font-size: 0.95em;
+        font-size: 14px;
+    }
+    .container-shadow {
+        width: 100vw;
+    }
+    #lightgallery {
+        column-count: 2;
+        /* Esta linea hace la magia */
     }
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
     body {
-        font-size: 0.8em;
+        font-size: 12px;
+    }
+    .container-shadow {
+        width: 100vw;
+    }
+    #lightgallery {
+        column-count: 1;
+        /* Esta linea hace la magia */
     }
 }
