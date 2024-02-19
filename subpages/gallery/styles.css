@@ -1,0 +1,12 @@
+#lightgallery {
+    max-width: 80%;
+
+    margin: 1em auto;
+}
+#lightgallery img {
+    margin: 0.25em 0;
+    border: 3px solid white;
+    border-radius: 10px;
+
+    filter: grayscale(100);
+}

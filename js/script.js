@@ -45,11 +45,6 @@ toTopDiv.addEventListener("click", function(e) {
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 
-lightgallery = document.getElementById('lightgallery');
-lightGallery(lightgallery, {
-    closable: true,
-});
-
 const lgContainer = document.getElementById('inline-gallery-container');
 const inlineGallery = lightGallery(lgContainer, {
     container: lgContainer,

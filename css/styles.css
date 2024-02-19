@@ -7,6 +7,13 @@ img {
     height: auto;
 }
 
+a {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+
 .container {
     background-image: url("../images/space-background.jpg");
     background-repeat: repeat;
@@ -15,6 +22,19 @@ img {
 
     display: flex;
     justify-content: center;
+}
+
+.intro {
+    position: relative;
+}
+
+.fox-in-tree {
+    position: absolute;
+    right: -2%;
+    top: 75%;
+    z-index: 1000;
+
+    width: 20%;
 }
 
 .title {
@@ -33,6 +53,10 @@ img {
 
 .first-chat {
     margin: .5em 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 .first-chat .subtitle {
     font-size: 1.5em;
@@ -50,10 +74,52 @@ img {
 }
 
 .inline-gallery-container {
-    width: 100%;
+    width: 35%;
 
     height: 0;
     padding-bottom: 65%;
+}
+
+.first-chat .subpages {
+    width: 50%;
+
+    margin-left: 2em;
+}
+.first-chat .subpages h1 {
+    font-size: 2em;
+
+    background: black;
+
+    padding: 0.5em;
+}
+.first-chat .subpages .planets {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.first-chat .subpages .planets .planet {
+    width: 30%;
+    height: 30%;
+
+    margin: 1em;
+
+    position: relative;
+
+    cursor: pointer;
+}
+.first-chat .subpages .planets .planet img {
+    width: 100%;
+}
+.first-chat .subpages .planets .planet div[class^='icon-'] {
+    width: 100%;
+
+    font-size: 2em;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
 }
 
 .phrase-bd, .title-bd {
@@ -102,19 +168,6 @@ img {
     color: rgb(255, 9, 173);
 
     transition: color 1s;
-}
-
-#lightgallery {
-    max-width: 80%;
-
-    margin: 1em auto;
-}
-#lightgallery img {
-    margin: 0.25em 0;
-    border: 3px solid white;
-    border-radius: 10px;
-
-    filter: grayscale(100);
 }
 
 .inline-gallery-container {
