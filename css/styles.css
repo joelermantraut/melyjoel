@@ -26,7 +26,11 @@ a:visited {
 
 .intro {
     position: relative;
+
+    display: flex;
+    justify-content: center;
 }
+
 
 .fox-in-tree {
     position: absolute;
@@ -51,53 +55,49 @@ a:visited {
     cursor: pointer;
 }
 
-.first-chat {
+.section.first {
     margin: .5em 0;
 
     display: flex;
-    justify-content: center;
-    align-items: start;
 }
-.first-chat .subtitle {
+.section.first .subtitle {
     font-size: 1.5em;
 
     margin: 0.5em 0.25em;
     padding: 0.5em;
     border-bottom: 1px solid white;
 }
-.first-chat .img-wrapper {
+.section.first .img-wrapper {
     display: flex;
     padding: 0 0.5em;
 }
-.first-chat .img-wrapper img {
+.section.first .img-wrapper img {
     margin-right: .1em;
 }
 
 .inline-gallery-container {
-    width: 35%;
-
     height: 0;
     padding-bottom: 65%;
 }
 
-.first-chat .subpages {
+.section.first .subpages {
     width: 50%;
 
     margin-left: 2em;
 }
-.first-chat .subpages h1 {
+.section.first .subpages h1 {
     font-size: 2em;
 
     background: black;
 
     padding: 0.5em;
 }
-.first-chat .subpages .planets {
+.section.first .subpages .planets {
     display: flex;
     justify-content: start;
     align-items: center;
 }
-.first-chat .subpages .planets .planet {
+.section.first .subpages .planets .planet {
     width: 30%;
     height: 30%;
 
@@ -107,13 +107,12 @@ a:visited {
 
     cursor: pointer;
 }
-.first-chat .subpages .planets .planet img {
+.section.first .subpages .planets .planet img {
     width: 100%;
 }
-.first-chat .subpages .planets .planet div[class^='icon-'] {
+.section.first .subpages .planets .planet div[class^='icon-'] {
     width: 100%;
 
-    font-size: 2em;
     text-align: center;
 
     position: absolute;
@@ -157,65 +156,8 @@ a:visited {
     background: black;
 }
 
-.phrase-1 span {
-    color: rgb(255, 9, 173);
-    font-weight: bold;
-}
-.phrase-1.white {
-    color: white;
-}
-.phrase-1.pink {
-    color: rgb(255, 9, 173);
-
-    transition: color 1s;
-}
-
 .inline-gallery-container {
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.to-top {
-    width: 7%;
-    border: 2px solid white;
-
-    position: fixed;
-    right: 2em;
-    bottom: 1em;
-
-    display: block;
-}
-.to-top.hide {
-    visibility: hidden;
-    opacity: 0;
-
-    transition: all .5s;
-}
-.to-top.show {
-    visibility: visible;
-    opacity: 1;
-
-    cursor: pointer;
-
-    transition: all .5s;
-}
-.to-top p {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background: rgba(0, 0, 0, 0.5);
-
-    font-size: 3em;
-    color: white;
-
-    cursor: pointer;
 }
 
 .footer {

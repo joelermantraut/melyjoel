@@ -9,6 +9,22 @@
         column-count: 3;
         /* Esta linea hace la magia */
     }
+    .section.first .subpages .planets .planet div[class^='icon-'] {
+        font-size: 3.5em;
+    }
+
+    /* Wrapping of intro image */
+    .intro .img-wrapper, .intro .img-wrapper img {
+        width: 100%;
+    }
+
+    .section.first {
+        justify-content: center;
+        align-items: start;
+    }
+    .inline-gallery-container {
+        width: 35%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -22,6 +38,22 @@
         column-count: 2;
         /* Esta linea hace la magia */
     }
+    .section.first .subpages .planets .planet div[class^='icon-'] {
+        font-size: 2.5em;
+    }
+
+    /* Wrapping of intro image */
+    .intro .img-wrapper, .intro .img-wrapper img {
+        width: 100vw;
+    }
+
+    .section.first {
+        justify-content: center;
+        align-items: start;
+    }
+    .inline-gallery-container {
+        width: 35%;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -32,7 +64,36 @@
         width: 100vw;
     }
     #lightgallery {
-        column-count: 1;
+        column-count: 2;
         /* Esta linea hace la magia */
+    }
+    .section.first .subpages .planets .planet div[class^='icon-'] {
+        font-size: 2em;
+    }
+
+    /* Wrapping of intro image */
+    .intro .img-wrapper {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    
+        position: relative;
+    
+        overflow: hidden;
+    }
+    .intro .img-wrapper img {
+        width: 100vw;
+        
+        position: absolute;
+        left: -90%;
+        top: 10%;
+    }
+
+    .section.first {
+        flex-direction: column;
+        align-items: center;
+    }
+    .inline-gallery-container {
+        width: 90%;
     }
 }
